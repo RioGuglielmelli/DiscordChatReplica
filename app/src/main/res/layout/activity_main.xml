@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#35393f">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#36393f"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:backgroundTint="@color/dark_gray">
+
+    <!-- Three Line Menu Button -->
+    <ImageButton
+        android:id="@+id/menu_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="12dp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_menu" />
+
+    <!-- @ Symbol -->
+    <ImageButton
+        android:id="@+id/at_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_at"/>
+
+    <!-- Chat Room Name -->
+    <TextView
+        android:id="@+id/chat_room_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2f3136"
+        android:padding="16dp"
+        android:text=" Your Best Friend   "
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Small Green Circle -->
+
+        <ImageButton
+            android:id="@+id/green_circle"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_online" />
+
+
+        <!-- Phone Symbol -->
+    <ImageButton
+        android:id="@+id/phone_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_call" />
+
+    <!-- Video Symbol -->
+    <ImageButton
+        android:id="@+id/video_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_video"
+         />
+
+    <!-- People Symbol -->
+    <ImageButton
+        android:id="@+id/people_button"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_people"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/new_message_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_frame"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- Plus Button -->
+        <ImageButton
+            android:id="@+id/plus_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rounded_edge"
+            android:src="@drawable/ic_plus" />
+
+        <!-- Gift Box Button -->
+        <ImageButton
+            android:id="@+id/gift_box_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/rounded_edge"
+            android:src="@drawable/ic_gift" />
+
+
+
+        <!-- Input Box -->
+        <TextView
+            android:id="@+id/message_input_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="12dp"
+            android:background="@drawable/rounded_text"
+            android:hint="Message @ Your Best Friend"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical|start"
+            android:drawableRight="@drawable/ic_emote"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
